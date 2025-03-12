@@ -27,5 +27,5 @@ Check out my portfolio (if you would like to- I'll never force you)!
 
 ## ℹ️ Source Credits:
 
-Avatar created from <a href="https://readyplayer.me/">Ready Player Me</a> and animation from <a href="https://www.mixamo.com/">Mixamo</a>. All other 3D models are created in the components in the src folder. Gif is from <a href="https://giphy.com/">giphy.com</a>. Loading SVG is <a href="http://www.freepik.com">designed by Freepik</a> and icon SVGs are from <a href="https://tabler.io/icons">tabler.co</a>. 
+Avatar created from <a href="https://readyplayer.me/">Ready Player Me</a> and animation from <a href="https://www.mixamo.com/">Mixamo</a>. All other 3D models are credited in its respective component folder in the src directory. Gif is from <a href="https://giphy.com/">giphy.com</a>. Loading SVG is <a href="http://www.freepik.com">designed by Freepik</a> and icon SVGs are from <a href="https://tabler.io/icons">tabler.co</a>. 
 
