@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.textWrapper {
+  border-top: 1px solid gray;
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}

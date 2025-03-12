@@ -1,0 +1,4 @@
+.sectionContainer {
+  margin: var(--site-margin-topbottom) var(--site-margin);
+  padding: var(--site-padding-topbottom) var(--site-padding);
+}

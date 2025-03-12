@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Source_Sans_3, Open_Sans, Bitter } from "next/font/google";
 import "./globals.css";
+
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans-3",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+const bitter = Bitter({
+  variable: "--font-bitter",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${sourceSans.variable} ${openSans.variable} ${bitter.variable}`}>
         {children}
       </body>
     </html>

@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "image": "/projects/Dakota's.png",
+      "alt": "Dakota's On The Cove website screenshot",
+      "title": "Dakota's On The Cove",
+      "description": "This is a custom built and designed website, worked on collaboratively with designers and project managers for a restaurant based in The Bronx, New York.",
+      "tech": [
+        "Webflow",
+        "Vanilla JavaScript",
+        "Gsap",
+        "SwiperJs"
+      ],
+      "repo": "",
+      "deploy": "https://dakotasonthecove.webflow.io/"
+    },
+    {
+      "image": "/projects/the-froth-cafe.png",
+      "alt": "The froth cafe e-commerce application screenshot",
+      "title": "The Froth Cafe",
+      "description": "The Froth Cafe is a fake cafe website that allows users to browse menus, place orders, and create accounts.",
+      "tech": [
+        "NextJs",
+        "TypeScript",
+        "Headless UI",
+        "Radix UI",
+        "Supabase",
+        "Tailwind"
+      ],
+      "repo": "https://github.com/judy0ye/the-froth-cafe",
+      "deploy": "https://the-froth-cafe.vercel.app/"
+    },
+    {
+      "image": "/projects/GAAD.png",
+      "alt": "Global Accessibility Awareness Day website screenshot",
+      "title": "Ongoing: Global Accessibility Awareness Day",
+      "description": "Assiting in the migration of the Global Accessibility Awareness Day website from WordPress to NextJS.",
+      "tech": [
+        "NextJs",
+        "TypeScript",
+        "NodeJs",
+        "Jest",
+        "Husky",
+        "Supabase",
+        "Mantine",
+        "GitHub Actions"
+      ],
+      "repo": "https://github.com/GAAD-Foundation/accessibility-day-nextjs",
+      "deploy": "https://accessibility.day/"
+    },
+    {
+      "image": "/projects/thrifty-pet.png",
+      "alt": "Thrifty Pet application screenshot",
+      "title": "Thrifty Pet",
+      "description": "This app tracks Chewy product prices overtime to show their lowest, highest, and average prices. Users can add, edit, and delete notes. (Current prices are not up to date - cron job that was scheduled to scrape the data daily is commented out.)",
+      "tech": [
+        "NextJs",
+        "TypeScript",
+        "Cypress",
+        "NodeJS",
+        "ExpressJs",
+        "MongoDB"
+      ],
+      "repo": "https://github.com/judy0ye/thrifty-pet-fe",
+      "beRepo": "https://github.com/judy0ye/thrifty-pet-be",
+      "deploy": "https://thrifty-pet-fe.vercel.app/"
+    }
+  ]
+}

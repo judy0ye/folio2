@@ -1,0 +1,151 @@
+.srOnly:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0;
+}
+
+.header {
+  --_animationStartsAfter: 120dvh;
+  --_animationDistance: 2px;
+  z-index: 2;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(11, 11, 11, 0.75);
+  color: var(--light-heading-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  @supports (animation-timeline: view()) {
+    animation: fixedNav linear forwards;
+    animation-timeline: view();
+    animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+    animation-range-end: calc(
+      100dvh + var(--_animationStartsAfter) + var(--_animationDistance)
+    );
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-open-sans);
+  color: inherit;
+  width: 100%;
+}
+
+.navWrapper {
+  display: flex;
+}
+
+.navLink,
+.logo {
+  padding: 0.25em 0.75em;
+  border-radius: 5rem;
+  height: 100%;
+  color: inherit;
+}
+
+.logo {
+  font-weight: 900;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  border-radius: 100%;
+
+  @supports (animation-timeline: view()) {
+    animation: logo linear forwards;
+    animation-timeline: view();
+    animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+    animation-range-end: calc(
+      100dvh + var(--_animationStartsAfter) + var(--_animationDistance)
+    );
+  }
+
+  @media (max-width: 550px) {
+    z-index: 999;
+    font-size: 1.125rem;
+  }
+}
+
+.centerWrapper,
+.centerWrapperOpen {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: 550px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 550px) {
+    position: fixed;
+    inset: 0 0 0 0;
+    background: #0b0b0b;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    z-index: -1;
+
+    @supports (animation-timeline: view()) {
+      animation: fixedSideNav linear forwards;
+      animation-timeline: view();
+      animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+      animation-range-end: calc(
+        100dvh + var(--_animationStartsAfter) + var(--_animationDistance)
+      );
+    }
+  }
+}
+
+.centerWrapper {
+  @media (max-width: 550px) {
+    display: none;
+    transform: translateX(100%);
+  }
+}
+
+.centerWrapperOpen {
+  @media (max-width: 550px) {
+    transform: translateX(0%);
+    padding: min(30vh, 12rem) 2em;
+  }
+}
+
+.mobileNavToggle {
+  z-index: 9999;
+
+  @media (min-width: 550px) {
+    display: none;
+  }
+}
+
+@keyframes logo {
+  100% {
+    border-color: var(--dark-heading-text);
+  }
+}
+
+@keyframes fixedNav {
+  100% {
+    color: var(--dark-heading-text);
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fixedSideNav {
+  100% {
+    color: var(--dark-heading-text);
+    background: rgba(255, 255, 255);
+  }
+}

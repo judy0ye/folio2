@@ -1,0 +1,35 @@
+.title {
+  color: var(--dark-heading-text);
+  padding-bottom: 0.5rem;
+}
+
+.lightTitle {
+  color: var(--light-heading-text);
+  padding-bottom: 0.5rem;
+}
+
+.divider {
+  height: 4px;
+  background: var(--dark-divider);
+  width: 8ch;
+}
+
+.lightDivider {
+  height: 4px;
+  background: var(--light-divider);
+  width: 8ch;
+}
+
+.headline {
+  font-size: 1.125rem;
+  font-family: var(--font-bitter);
+  color: var(--dark-special-headline-text);
+  padding: 0.5rem 0 1.5rem;
+}
+
+.lightHeadline {
+  font-size: 1.125rem;
+  font-family: var(--font-bitter);
+  color: var(--light-special-headline-text);
+  padding: 0.5rem 0 1.5rem;
+}

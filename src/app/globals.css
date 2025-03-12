@@ -1,4 +1,198 @@
+/* html {
+  scroll-snap-type: y mandatory;
+} */
+
+/* section {
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-margin-top: 8vh;
+} */
+* {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  -webkit-scrollbar: none; /* Safari and Chrome */
+}
+
 :root {
+  --dark-background: #0b0b0b;
+  --light-background: rgb(222, 222, 222);
+  --dark-divider: rgb(17 30 35);
+  --light-divider: aliceblue;
+  --dark-heading-text: black;
+  --light-heading-text: white;
+  --light-special-headline-text: rgb(216, 218, 208);
+  --dark-special-headline-text: rgb(77, 77, 73);
+  --site-margin: 1rem;
+  --site-margin-topbottom: 5rem;
+  --heading-font: var(--font-source-sans-3), Helvetica, Arial;
+  --special-headline-font: var(--font-bitter), Times, serif;
+  --special-headline-font-size: 1.25;
+  --content-font: var(--font-open-sans), Helvetica, Arial;
+  --content-font-size: 1rem;
+  --content-line-height: 1.5em;
+  --content-font-weight: 400;
+  --primary-font-weight: 700;
+  --secondary-font-weight: 500;
+  --title-font-size: 1.5rem;
+  --title-line-height: 1.1em;
+  --nav-font-size: 1.65rem;
+  /* --nav-font-size: 1.125rem; */
+  --site-padding-topbottom: 1.5rem;
+  --site-padding: 0;
+
+  @media(min-width: 551px) {
+    --nav-font-size: 1.125rem;
+  }
+
+  @media (min-width: 769px) {
+    --site-margin: 2rem;
+    --title-font-size: 2rem;
+    --title-letter-spacing: -0.02em;
+    --site-padding-topbottom: 2rem;
+  }
+
+  @media (min-width: 1025px) {
+    --site-margin: 3rem;
+    --title-font-size: 2.5rem;
+    --special-headline-font-size: 1.5;
+    /* --content-font-size: 1.25rem; */
+    
+    --content-font-size: 1.125rem;
+
+  }
+
+  @media (min-width: 1281px) {
+    /* --site-margin: 4rem; */
+    --site-margin: 4.75rem;
+  }
+
+  @media (min-width: 1440px) {
+    /* --site-margin: 4.75rem; */
+    --site-margin: auto;
+    --site-padding: 7.25rem;
+    /* --site-padding: 4.75rem; */
+    --title-font-size: 3.25rem;
+    --special-headline-font-size: 1.75;
+    --content-font-size: 1.15rem;
+    --nav-font-size: 1.15rem;
+    --site-margin-topbottom: 7.5rem;
+    --site-padding-topbottom: 4.25rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  user-select: none;
+  /* color: var(--light-heading-text) */
+}
+
+h1,
+h2 {
+  font-family: var(--font-source-sans-3);
+  line-height: var(--title-line-height);
+  letter-spacing: var(--title-letter-spacing);
+  /* padding-bottom: 1.5rem; */
+
+  /* @media(min-width: 1025px) {
+    padding-bottom: 2.5rem;
+  } */
+}
+
+h1 {
+  font-weight: var(--primary-font-weight);
+}
+
+h2 {
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--title-font-size);
+}
+
+p {
+  font-family: var(--font-open-sans);
+  margin: 0;
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+  user-select: none;
+}
+
+nav {
+  font-family: var(--content-font);
+  font-size: var(--nav-font-size);
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background:  #122126; */
+}
+
+
+section {
+  scroll-margin-top: 2.5rem;
+
+  @media (min-width: 1440px) {
+    scroll-margin-top: 0;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.25;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  /* background: var(--light-heading-text) !important; */
+  background: black !important;
+}
+
+.swiper-pagination-bullet-active {
+  /* background: var(--light-heading-text) !important; */
+  background: black !important;
+  width: 1rem !important;
+  border-radius: 8px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute !important;
+  color: black !important;
+  top: auto !important;
+  transform: translateY(100%);
+  width: 25% !important;
+}
+
+.swiper-pagination {
+  transform: translateY(300%) !important;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -39,4 +233,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

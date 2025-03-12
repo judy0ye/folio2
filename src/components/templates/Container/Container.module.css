@@ -1,0 +1,5 @@
+.container {
+  margin: 0 var(--site-margin);
+  padding: 0 var(--site-padding);
+  width: 100%;
+}
