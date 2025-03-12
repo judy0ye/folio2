@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Geist, Geist_Mono, Source_Sans_3, Open_Sans, Bitter } from "next/font/google";
 import "./globals.css";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${sourceSans.variable} ${openSans.variable} ${bitter.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
