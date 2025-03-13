@@ -18,7 +18,7 @@
       "image": "/projects/the-froth-cafe.png",
       "alt": "The froth cafe e-commerce application screenshot",
       "title": "The Froth Cafe",
-      "description": "The Froth Cafe is a fake cafe website that allows users to browse menus, place orders, and create accounts.",
+      "description": "The Froth Cafe is a mock cafe website that allows users to browse menus, place orders, and create accounts.",
       "tech": [
         "NextJs",
         "TypeScript",
