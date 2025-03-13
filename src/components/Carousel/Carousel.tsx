@@ -71,7 +71,7 @@ export const Carousel = () => {
                 <ul className={classes.ul}>
                   {project.tech.map((tech, index) => (
                     <li key={index} className={classes.li}>
-                      {tech}
+                      {tech} <strong className={classes.separator}>|</strong>
                     </li>
                   ))}
                 </ul>

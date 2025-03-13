@@ -109,9 +109,17 @@
   flex-wrap: wrap;
 }
 
-.li {
+.separator {
+  font-weight: 900;
+  font-size: 16px;
+  margin: 1px 2px 0 2px;
+}
+
+/* keeping this here in case I want to switch designs */
+/* .li {
   border: 1px solid #0d1213;
   border-radius: 16px;
   padding: 4px 8px;
   align-self: center;
-}
+} */
+

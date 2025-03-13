@@ -31,7 +31,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Judy Ye's Portfolio",
-  description: "Frontend Software developer, Judy Ye's, portfolio.",
+  description: "Frontend software engineer, Judy Ye's portfolio.",
   icons: {
     icon: [
       {
