@@ -1,4 +1,5 @@
 .sectionContainer {
-  margin: var(--site-margin-topbottom) var(--site-margin);
+  margin: var(--site-margin-topbottom) auto;
   padding: var(--site-padding-topbottom) var(--site-padding);
+  max-width: calc(min(100%, var(--site-width-max)) - var(--site-margin)*2);
 }

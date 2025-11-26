@@ -41,7 +41,8 @@ export const PortfolioSection = ({
     progress === 100 && (
       <section
         ref={sectionRef}
-        id={`${title.toLowerCase().replace(/\s+/g, '-')}`}>
+        id={`${title.toLowerCase().replace(/\s+/g, '-')}`}
+        >
         <SectionContainer>
           <h2
             ref={titleRef}
