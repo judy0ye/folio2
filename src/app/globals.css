@@ -4,7 +4,14 @@
   -webkit-scrollbar: none; /* Safari and Chrome */
 }
 
+/* html {
+  color-scheme: light dark;
+  color: light-dark(var(--dark-theme-color), var(--light-theme-color));
+} */
+
 :root {
+  /* --dark-theme-color: black;
+  --light-theme-color: white; */
   --site-width-max: 1440px;
   --dark-background: #0b0b0b;
   --light-background: rgb(222, 222, 222);

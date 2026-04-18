@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "image": "/projects/togaTech.png",
+      "alt": "TOGA Technology website screenshot",
+      "title": "TOGA Technology",
+      "description": "This is a custom built website, worked on collaboratively with UI/UX designers, project managers, and software engineers for an AI-driven platform company.",
+      "tech": [
+        "ReactJs",
+        "React Motion",
+        "Tailwind",
+        "React Router",
+        "Tanstack Query"
+      ],
+      "repo": "",
+      "deploy": "https://togatech.com/"
+    },
+    {
       "image": "/projects/Dakota's.png",
       "alt": "Dakota's On The Cove website screenshot",
       "title": "Dakota's On The Cove",
@@ -47,23 +62,6 @@
       ],
       "repo": "https://github.com/GAAD-Foundation/accessibility-day-nextjs",
       "deploy": "https://accessibility.day/"
-    },
-    {
-      "image": "/projects/thrifty-pet.png",
-      "alt": "Thrifty Pet application screenshot",
-      "title": "Thrifty Pet",
-      "description": "This app tracks Chewy product prices overtime to show their lowest, highest, and average prices. Users can add, edit, and delete notes. (Current prices are not up to date - cron job that was scheduled to scrape the data daily is commented out.)",
-      "tech": [
-        "NextJs",
-        "TypeScript",
-        "Cypress",
-        "NodeJS",
-        "ExpressJs",
-        "MongoDB"
-      ],
-      "repo": "https://github.com/judy0ye/thrifty-pet-fe",
-      "beRepo": "https://github.com/judy0ye/thrifty-pet-be",
-      "deploy": "https://thrifty-pet-fe.vercel.app/"
     }
   ]
 }
