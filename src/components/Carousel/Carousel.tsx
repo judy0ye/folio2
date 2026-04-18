@@ -86,7 +86,7 @@ export const Carousel = () => {
                       Repo
                     </Link>
                   )}
-                  {project.beRepo && (
+                  {/* {project.beRepo && (
                     <Link
                       className={classes.links}
                       href={project.beRepo}
@@ -95,7 +95,7 @@ export const Carousel = () => {
                       <IconExternalLink width={'1rem'} />
                       BE Repo*
                     </Link>
-                  )}
+                  )} */}
                   <Link
                     className={classes.links}
                     href={project.deploy}
